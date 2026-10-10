@@ -1,0 +1,61 @@
+{
+	"name": "invisnet/phpstan-compose-shapes",
+	"description": "PHPStan extension providing compose-shapes<A, B, ...> to merge sealed array shapes",
+	"keywords": [
+		"phpstan",
+		"static analysis",
+		"array shape",
+		"sealed"
+	],
+	"type": "phpstan-extension",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Charles Lecklider",
+			"email": "code@invis.net",
+			"homepage": "https://invis.net"
+		}
+	],
+	"require": {
+		"php": "^8.1",
+		"phpstan/phpstan": "^2.3"
+	},
+	"require-dev": {
+		"php-parallel-lint/php-parallel-lint": "^1.4",
+		"phpstan/extension-installer": "^1.4",
+		"phpstan/phpstan-deprecation-rules": "^2.0",
+		"phpstan/phpstan-phpunit": "^2.0",
+		"phpstan/phpstan-strict-rules": "^2.0",
+		"phpunit/phpunit": "^10.5"
+	},
+	"autoload": {
+		"psr-4": {
+			"Invisnet\\PHPStan\\ComposeShapes\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Invisnet\\PHPStan\\ComposeShapes\\": "tests/"
+		}
+	},
+	"scripts": {
+		"tests": "phpunit",
+		"phpstan": "phpstan analyse",
+		"lint": "parallel-lint src tests"
+	},
+	"extra": {
+		"phpstan": {
+			"includes": [
+				"extension.neon"
+			]
+		}
+	},
+	"config": {
+		"sort-packages": true,
+		"allow-plugins": {
+			"phpstan/extension-installer": true
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}
