@@ -73,6 +73,14 @@ PHPStan reports that as `parameter.unresolvableType` / `return.unresolvableType`
 
 Aliases expand before the merge, so importing a sealed `@phpstan-type` works.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). AI-assisted contributions are welcome; open or agree an Issue before sending a PR.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
 MIT
