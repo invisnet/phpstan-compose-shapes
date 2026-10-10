@@ -1,0 +1,5 @@
+services:
+	-
+		class: Invisnet\PHPStan\ComposeShapes\ComposeShapesTypeNodeResolverExtension
+		tags:
+			- phpstan.phpDoc.typeNodeResolverExtension
